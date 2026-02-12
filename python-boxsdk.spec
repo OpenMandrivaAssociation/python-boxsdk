@@ -15,9 +15,6 @@ BuildArch:	noarch
 %description
 Official Box Python SDK
 
-%prep
-%autosetup -p1 -n boxsdk-%{version}
-
 %files
 %{py_sitedir}/boxsdk
 %{py_sitedir}/box_sdk_gen
