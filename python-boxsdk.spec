@@ -12,6 +12,11 @@ BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
 
+%patchlist
+# Get rid of the dataclasses dependency -- dataclasses are
+# supported out of the box in python >= 3.7
+boxsdk-no-dataclasses-dep.patch
+
 %description
 Official Box Python SDK
 

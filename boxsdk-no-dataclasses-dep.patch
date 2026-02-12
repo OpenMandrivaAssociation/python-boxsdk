@@ -1,0 +1,43 @@
+diff -up python-boxsdk-4.4.0/PKG-INFO.omv~ python-boxsdk-4.4.0/PKG-INFO
+--- python-boxsdk-4.4.0/PKG-INFO.omv~	2026-02-12 16:45:29.626953946 +0100
++++ python-boxsdk-4.4.0/PKG-INFO	2026-02-12 16:45:33.021740045 +0100
+@@ -28,7 +28,6 @@ Description-Content-Type: text/markdown
+ License-File: LICENSE
+ Requires-Dist: attrs>=17.3.0
+ Requires-Dist: urllib3
+-Requires-Dist: dataclasses
+ Requires-Dist: requests<3
+ Requires-Dist: requests-toolbelt<2
+ Requires-Dist: python-dateutil
+diff -up python-boxsdk-4.4.0/boxsdk.egg-info/PKG-INFO.omv~ python-boxsdk-4.4.0/boxsdk.egg-info/PKG-INFO
+--- python-boxsdk-4.4.0/boxsdk.egg-info/PKG-INFO.omv~	2026-02-12 16:45:47.851005971 +0100
++++ python-boxsdk-4.4.0/boxsdk.egg-info/PKG-INFO	2026-02-12 16:45:51.956987581 +0100
+@@ -28,7 +28,6 @@ Description-Content-Type: text/markdown
+ License-File: LICENSE
+ Requires-Dist: attrs>=17.3.0
+ Requires-Dist: urllib3
+-Requires-Dist: dataclasses
+ Requires-Dist: requests<3
+ Requires-Dist: requests-toolbelt<2
+ Requires-Dist: python-dateutil
+diff -up python-boxsdk-4.4.0/boxsdk.egg-info/requires.txt.omv~ python-boxsdk-4.4.0/boxsdk.egg-info/requires.txt
+--- python-boxsdk-4.4.0/boxsdk.egg-info/requires.txt.omv~	2026-02-12 16:45:57.055455391 +0100
++++ python-boxsdk-4.4.0/boxsdk.egg-info/requires.txt	2026-02-12 16:45:59.925078570 +0100
+@@ -1,6 +1,5 @@
+ attrs>=17.3.0
+ urllib3
+-dataclasses
+ requests<3
+ requests-toolbelt<2
+ python-dateutil
+diff -up python-boxsdk-4.4.0/setup.py.omv~ python-boxsdk-4.4.0/setup.py
+--- python-boxsdk-4.4.0/setup.py.omv~	2026-02-12 16:45:37.722634297 +0100
++++ python-boxsdk-4.4.0/setup.py	2026-02-12 16:45:40.829798293 +0100
+@@ -54,7 +54,6 @@ def main():
+     install_requires = [
+         'attrs>=17.3.0',
+         'urllib3',
+-        'dataclasses',
+         'requests<3',
+         'requests-toolbelt<2',
+         'python-dateutil',
