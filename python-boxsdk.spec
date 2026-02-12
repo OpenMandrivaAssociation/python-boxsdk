@@ -1,6 +1,8 @@
 Name:		python-boxsdk
-Version:	3.13.0
-Release:	3
+# Before updating to the 10.x+ branch, please make sure
+# it doesn't break duplicity.
+Version:	4.4.0
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/boxsdk/boxsdk-%{version}.tar.gz
 Summary:	Official Box Python SDK
 URL:		https://pypi.org/project/boxsdk/
@@ -18,4 +20,5 @@ Official Box Python SDK
 
 %files
 %{py_sitedir}/boxsdk
+%{py_sitedir}/box_sdk_gen
 %{py_sitedir}/boxsdk-*.*-info
