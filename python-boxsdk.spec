@@ -1,7 +1,7 @@
 Name:		python-boxsdk
 # Before updating to the 10.x+ branch, please make sure
 # it doesn't break duplicity.
-Version:	4.4.0
+Version:	10.13.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/boxsdk/boxsdk-%{version}.tar.gz
 Summary:	Official Box Python SDK
@@ -15,7 +15,7 @@ BuildArch:	noarch
 %patchlist
 # Get rid of the dataclasses dependency -- dataclasses are
 # supported out of the box in python >= 3.7
-boxsdk-no-dataclasses-dep.patch
+# dropped (no longer applies): boxsdk-no-dataclasses-dep.patch
 
 %description
 Official Box Python SDK
