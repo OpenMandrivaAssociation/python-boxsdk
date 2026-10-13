@@ -1,14 +1,16 @@
 Name:		python-boxsdk
 # Before updating to the 10.x+ branch, please make sure
 # it doesn't break duplicity.
-Version:	10.13.0
+Version:	10.17.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/boxsdk/boxsdk-%{version}.tar.gz
 Summary:	Official Box Python SDK
 URL:		https://pypi.org/project/boxsdk/
-License:	Apache Software License, Version 2.0, http://www.apache.org/licenses/LICENSE-2.0
+License:	Apache-2.0
 Group:		Development/Python
-BuildRequires:	python
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildSystem:	python
 BuildArch:	noarch
 
