@@ -23,6 +23,5 @@ BuildArch:	noarch
 Official Box Python SDK
 
 %files
-%{py_sitedir}/boxsdk
 %{py_sitedir}/box_sdk_gen
 %{py_sitedir}/boxsdk-*.*-info
